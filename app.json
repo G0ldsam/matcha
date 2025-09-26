@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.goldsam.matcha",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,13 +25,22 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.goldsam.matcha"
+      "package": "com.goldsam.matcha",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-barcode-scanner"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "977d4769-cd74-4f87-be1a-d284016109ce"
+      }
+    },
+    "owner": "goldsam"
   }
 }
